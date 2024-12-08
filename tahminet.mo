@@ -94,11 +94,8 @@ actor Tahminet {
             else if (fark <= 50) { "Çok Soğuk." } 
             else { "Dondun!" };
 
-          if (tahmin < oyun.hedefSayi) {
+        
             return #ok(" => " # sicaklikDurumu # " Kalan hak: " # Nat.toText(yeniOyun.kalanHak));
-          } else {
-            return #ok(" => " # sicaklikDurumu # " Kalan hak: " # Nat.toText(yeniOyun.kalanHak));
-          }
         }
       }
     }
